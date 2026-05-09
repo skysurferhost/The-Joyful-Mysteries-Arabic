@@ -833,20 +833,18 @@ body.view-control-buttons .viewControlButton { display: block; }
    (and still allows up to 2 lines without breaking centering) */
 @media (max-width: 768px) {
 
-  /* keep title bar aligned with buttons */
   .mobile #titleBar {
     height: 50px;
     right: 50px;
   }
 
   .mobile #titleBar .sceneName {
-    /* override clamp layout that breaks centering */
     display: flex !important;
     -webkit-box-orient: initial !important;
     -webkit-line-clamp: unset !important;
 
-    align-items: center !important;      /* vertical center ✅ */
-    justify-content: center !important;  /* horizontal center ✅ */
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
 
     width: 100%;
@@ -855,15 +853,14 @@ body.view-control-buttons .viewControlButton { display: block; }
     padding: 8px 12px !important;
     line-height: 1.7 !important;
 
-    /* allow wrapping, but don't cut mid-word */
     white-space: normal !important;
     word-break: keep-all !important;
     overflow-wrap: anywhere !important;
 
-    /* limit to ~2 lines while still centered */
     overflow: hidden !important;
     max-height: calc(1.7em * 2 + 2px) !important;
   }
+}
 
 /* Hide hotspot title text when closed so it does not show behind the i icon */
 .info-hotspot:not(.visible) .info-hotspot-title-wrapper {
