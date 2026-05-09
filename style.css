@@ -785,12 +785,12 @@ body.single-scene #sceneListToggle {
   width: 100%;
 }
 
-/* Desktop hotspot title: push Arabic title toward the X */
+/* Desktop hotspot title: keep title away from the i icon and near the X */
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
-  left: 0;
+  left: 40px;
   right: 40px;
-  width: 380px;
+  width: auto;
   padding: 0 10px;
 }
 
