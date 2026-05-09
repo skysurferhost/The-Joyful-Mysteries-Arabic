@@ -766,6 +766,34 @@ body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.4s;
 }
 
+/* Arabic RTL fix for info hotspot title/header */
+.info-hotspot.visible .info-hotspot-header,
+.info-hotspot-modal.visible .info-hotspot-header {
+  direction: rtl;
+}
+
+.info-hotspot .info-hotspot-title-wrapper,
+.info-hotspot-modal .info-hotspot-title-wrapper {
+  direction: rtl;
+  text-align: right;
+}
+
+.info-hotspot .info-hotspot-title,
+.info-hotspot-modal .info-hotspot-title {
+  direction: rtl;
+  text-align: right;
+  width: 100%;
+}
+
+/* Desktop hotspot title: push Arabic title toward the X */
+.desktop .info-hotspot.visible .info-hotspot-title-wrapper,
+.desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
+  left: 0;
+  right: 40px;
+  width: 380px;
+  padding: 0 10px;
+}
+
 /* ---------- View control buttons ---------- */
 
 .viewControlButton {
